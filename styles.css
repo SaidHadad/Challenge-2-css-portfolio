@@ -44,7 +44,7 @@ header h1 {
 }
 
 header ul {
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -135,7 +135,7 @@ main {
 .skill-group {
     width: 100%;
     height: 40vh;
-    margin: 20px 0px;
+    margin: 0px 0px 20px 0px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -200,7 +200,6 @@ main {
 
 @media screen and (max-width: 900px) {
     .contact {
-        flex-direction: row;
         flex-direction: column;
     }
 
@@ -213,6 +212,85 @@ main {
     }
 
     .contact ul {
-        padding-bottom: 20px;
+        padding: 0px 0px 20px 0px;
+        align-self: center;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 10vh;
+        align-content: space-between;
     }
+}
+
+@media screen and (max-width: 640px) {
+    .about-me {
+        flex-direction: column;
+    }
+    .about-me h1 {
+        border-bottom: solid;
+        border-right: none;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 0;
+    }
+    .about-me-paragraph {
+        padding-bottom: 20px;
+        align-self: center;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .skills {
+        flex-direction: column;
+    }
+    .skills h1 {
+        border-bottom: solid;
+        border-right: none;
+        width: auto;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .skill-container {
+        width:100%;
+        padding-left: 0px;
+    }
+    
+    .skill-group {
+        height: auto;
+    }
+    .first-skill,
+    .second-skill,
+    .third-skill,
+    .fourth-skill,
+    .fifth-skill {
+        width: 100%;
+        height: 20vh;
+        margin: 10px 0px 0px 0px;
+    }
+
+    header {
+        height: 50vh;
+    }
+    
+    header nav{
+        flex-direction: column;
+        align-items: end;
+    }
+    header ul{
+        flex-direction: column;
+        align-items: end;
+        height: 120px;
+        margin:0px 0px 10px 0px
+    }
+
+    header h1 {
+        padding-left: 40px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+
+    }
+
 }
