@@ -166,3 +166,35 @@ main {
 .skill h4 {
     margin: 0;
 }
+
+/* here i added the contact code */
+.contact {
+    display: flex;
+    color: rgb(49,52,61);
+}
+.contact h1 {
+    color: rgb(49,52,61);
+    border-right: solid;
+    border-color: rgb(49,52,61);
+    width: 14%;
+    text-align: end;
+    padding:0px 10px 40px 0px;
+    margin: 20px 0px 20px 0px;
+}
+
+.contact ul {
+    width: 85%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.contact ul li a {
+    text-decoration: none;
+    color: rgb(49,52,61);
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: rgb(49,52,61);
+}
