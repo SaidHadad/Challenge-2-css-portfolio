@@ -290,7 +290,19 @@ main {
         width: 100%;
         text-align: center;
         margin: 0;
-
     }
-
 }
+
+
+/* hover and various effects */
+
+    .first-skill:hover,
+    .second-skill:hover,
+    .third-skill:hover,
+    .fourth-skill:hover,
+    .fifth-skill:hover {
+        opacity: .7;
+        background-image: url(./assets/underconstruction.png);
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
