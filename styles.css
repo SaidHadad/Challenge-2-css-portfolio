@@ -35,6 +35,7 @@ header nav {
     justify-content: space-between;
 }
 header h1 {
+    width: 20%;
     font-size: 40px;
     margin: 5px 0px 10px 5px;
     padding-right: 17px;
@@ -44,7 +45,7 @@ header h1 {
 }
 
 header ul {
-    width: 70%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -129,13 +130,18 @@ main {
     margin: 20px 0px;
     display: flex;
     flex-direction: column-reverse;
+    background-image: url("./assets/Colorful Sound Waves Music App Logo.png");
+    background-size: fill;
+    background-repeat: round;
 }
+
+
 
 /* here I give the paramethers for the second group of skills */
 .skill-group {
     width: 100%;
     height: 40vh;
-    margin: 0px 0px 20px 0px;
+    margin: 20px 0px;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
@@ -165,144 +171,22 @@ main {
 .skill h4 {
     margin: 0;
 }
-
-/* here i added the contact code */
 .contact {
     display: flex;
-    color: rgb(49,52,61);
+    width: 100%;
 }
+
 .contact h1 {
-    color: rgb(49,52,61);
-    border-right: solid;
-    border-color: rgb(49,52,61);
     width: 14%;
     text-align: end;
-    padding:0px 10px 40px 0px;
-    margin: 20px 0px 20px 0px;
-}
-
-.contact ul {
-    width: 85%;
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.contact ul li a {
-    text-decoration: none;
-    color: rgb(49,52,61);
-    font-weight: bold;
-    border-bottom: solid;
+    border-right: solid;
     border-color: rgb(49,52,61);
+    padding:0px 10px 40px 0px;
 }
-
-@media screen and (max-width: 900px) {
-    .contact {
-        flex-direction: column;
-    }
-
-    .contact h1 {
-        border-bottom: solid;
-        border-right: none;
-        width: auto;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .contact ul {
-        padding: 0px 0px 20px 0px;
-        align-self: center;
-        width: 100%;
-        flex-wrap: wrap;
-        height: 10vh;
-        align-content: space-between;
-    }
+.contact ul {
+    width: 80%;
+    flex-flow: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
 }
-
-@media screen and (max-width: 640px) {
-    .about-me {
-        flex-direction: column;
-    }
-    .about-me h1 {
-        border-bottom: solid;
-        border-right: none;
-        width: auto;
-        text-align: center;
-        padding: 10px;
-        margin-bottom: 0;
-    }
-    .about-me-paragraph {
-        padding-bottom: 20px;
-        align-self: center;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 590px) {
-    .skills {
-        flex-direction: column;
-    }
-    .skills h1 {
-        border-bottom: solid;
-        border-right: none;
-        width: auto;
-        text-align: center;
-        padding: 10px;
-    }
-
-    .skill-container {
-        width:100%;
-        padding-left: 0px;
-    }
-    
-    .skill-group {
-        height: auto;
-    }
-    .first-skill,
-    .second-skill,
-    .third-skill,
-    .fourth-skill,
-    .fifth-skill {
-        width: 100%;
-        height: 20vh;
-        margin: 10px 0px 0px 0px;
-    }
-
-    header {
-        height: 50vh;
-    }
-    
-    header nav{
-        flex-direction: column;
-        align-items: end;
-    }
-    header ul{
-        flex-direction: column;
-        align-items: end;
-        height: 120px;
-        margin:0px 0px 10px 0px
-    }
-
-    header h1 {
-        padding-left: 40px;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-    }
-}
-
-
-/* hover and various effects */
-
-    .first-skill:hover,
-    .second-skill:hover,
-    .third-skill:hover,
-    .fourth-skill:hover,
-    .fifth-skill:hover {
-        opacity: .7;
-        background-image: url(./assets/underconstruction.png);
-        background-size:contain;
-        background-repeat: no-repeat;
-    }
