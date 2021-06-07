@@ -15,17 +15,28 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     border-width: 2px;
 }
 
+main {
+    background-color: rgb(237, 237, 246);
+}
 
+.side-bar {
+    color: rgb(49,52,61);
+    border-right: solid;
+    border-color: rgb(49,52,61);
+    width: 15%;
+    text-align: end;
+    padding: 0px 10px 0px 10px;
+}
 /* begining of header, here I set the header as the flex parent and gave all 
 the setting for width and height of the header
  */
 header {
     height: 30vh;
+    min-height: 150px;
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(./assets/header-background.jpeg);
     background-size: cover;
 }
 
@@ -35,13 +46,13 @@ header nav {
     justify-content: space-between;
 }
 header h1 {
-    width: 20%;
-    font-size: 40px;
-    margin: 5px 0px 10px 5px;
-    padding-right: 17px;
-    text-align: end;
+    padding: 0 1%;
+    font-size: 2em;
+    margin: 5px 0px;
+    text-align: center;
     background-color: lightblue;
     color: rgb(49,52,61);
+    align-self: center;
 }
 
 header ul {
@@ -56,6 +67,13 @@ header ul li {
     display: inline-block;
 }
 
+header h2 {
+    background: lightblue;
+    margin: 25px 8%;
+    padding: 10px;
+    align-self: flex-end;
+    font-size: 30px;
+}   
 header a {
     text-decoration: none;
     color:lightblue;
@@ -71,53 +89,24 @@ header a {
 }
 
 
-header h2 {
-    background: lightblue;
-    margin: 25px 8%;
-    padding: 10px;
-    align-self: flex-end;
-    font-size: 30px;
-}   
-
-main {
-    background-color: rgb(237, 237, 246);
-}
-
 /* begining of the first section of the main */
-.about-me {
+#about-me {
     display: flex;
-}
-
-.about-me h1 {
-    color: rgb(49,52,61);
-    border-right: solid;
-    border-color: rgb(49,52,61);
-    width: 15%;
-    text-align: end;
-    padding: 0px 10px 40px 0px;
-    
 }
 
 .about-me-paragraph {
     width: 90%;
     padding-left: 20px;
     color: rgb(49,52,61);
+    margin: 20px 0px;
+    font-size: 1.2em;
 }
+
 
 /* begining of the second section of the main */
+
 .skills {
     display: flex;
-}
-
-.side-bar {
-    color: rgb(49,52,61);
-    border-right: solid;
-    border-color: rgb(49,52,61);
-    width: 15%;
-    text-align: end;
-    padding:0px 10px 40px 0px;
-    margin: 20px 0px 0px 0px;
-
 }
 
 .skill-container {
@@ -139,11 +128,11 @@ main {
     border-color: lightblue;
     width: 100%;
     height: 40vh;
+    min-height: 250px;
     margin: 20px 0px;
     display: flex;
     flex-direction: column-reverse;
-    background-image: url("./assets/Colorful Sound Waves Music App Logo.png");
-    background-size: fill;
+    background-size: cover;
     background-repeat: round;
 }
 
@@ -152,7 +141,6 @@ main {
 /* here I give the paramethers for the second group of skills */
 .skill-group {
     width: 100%;
-    height: 40vh;
     margin: 20px 0px;
     display: flex;
     flex-wrap: wrap;
@@ -170,28 +158,35 @@ main {
     height: 48%;
     display: flex;
     flex-direction: column-reverse;
+    min-height: 250px;
+    margin: 20px 0px;
 }
 
-.skill {
+.technologies {
     background-color: lightblue;
     width: fit-content;
     padding: 10px;
     margin: 10px 0px;
 }
 
-.skill h3,
-.skill h4,
-.skill h5 {
+.technologies h3 {
     margin: 0;
+    font-size: 1.4em;
+}
+.technologies h4 {
+    margin: 0;
+    font-size: .9em;
+    padding-top: 2px;
 }
 
 /* parameters for the contact list */
-.contact {
+#contact {
     display: flex;
     width: 100%;
+    padding-bottom: 1%;
 }
 
-.contact ul {
+#contact ul {
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -199,4 +194,117 @@ main {
     width: 90%;
     padding-left: 20px;
     color: rgb(49,52,61);
+}
+
+#contact li {
+    list-style: none;
+}
+
+#contact a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+}
+
+@media screen and (max-width: 875px) {
+    #contact {
+        display: block;
+        width: 100%;
+    }
+    #contact h1 {
+        padding: 0 0 1% 0;
+        margin: 0;
+        border-right: none;
+        border-bottom: solid;
+        border-color: rgb(49,52,61);
+        text-align: center;
+        width: 100%;
+    }
+    #contact ul {
+        padding: 0;
+        width: 100%;
+    }
+    #contact li {
+        list-style: none;
+        padding-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #about-me {
+        display: inline-block;
+    }
+
+    .about-me-paragraph {
+        width: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    .skills {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .side-bar {
+        padding: 0 0 1% 0;
+        margin: 0;
+        border-right: none;
+        border-bottom: solid;
+        border-color: rgb(49,52,61);
+        text-align: center;
+        width: 100%;
+    }
+
+    .skill-container {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    header nav {
+        display: inline;
+    }
+
+    header h2 {
+        margin: 0;
+    }
+
+    header ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .skill-group {
+        display: initial;
+    }
+
+    .second-skill,
+    .third-skill,
+    .fourth-skill,
+    .fifth-skill {
+        border-style: solid;
+        border-color: lightblue;
+        width: 100%;
+        height: 40vh;
+        margin: 20px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .technologies {
+        width: auto;
+    }
+    .links {
+        justify-content: space-evenly;
+    }
+
+    .technologies h4,
+    .technologies h3 {
+        text-align: center;
+    }
+
 }
