@@ -12,7 +12,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
     max-width: 1140px;
     width: 90%;
     margin: 0 auto;
-    border-width: 2px;
 }
 
 
